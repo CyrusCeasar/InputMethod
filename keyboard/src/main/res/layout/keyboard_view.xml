@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="KeRui Secure Keyboard"
+            android:textSize="13sp"
+            android:textColor="#555555"
+            />
+
+        <View
+            android:id="@+id/v_hide"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_visibility"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_keyboard_bg"
+        android:focusable="true"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/selector_keyboard_key"
+        android:keyPreviewHeight="@dimen/default_keyPreviewHeight"
+        android:keyPreviewLayout="@layout/view_keyboard_preview"
+        android:keyTextColor="@color/default_keyTextColor"
+        android:keyTextSize="@dimen/default_keyTextSize"
+        android:labelTextSize="@dimen/default_labelTextSize"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:shadowColor="@color/default_keyShadowColor"
+        android:shadowRadius="0.0"
+        />
+
+</LinearLayout>

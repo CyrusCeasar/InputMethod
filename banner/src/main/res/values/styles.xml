@@ -1,0 +1,9 @@
+<resources>
+
+    <declare-styleable name="IndicatorView">
+        <attr name="count" format="integer" />
+        <attr name="indicatorColor" format="color" />
+        <attr name="indicatorWidth" format="dimension"/>
+        <attr name="defaultPosition" format="integer"/>
+    </declare-styleable>
+</resources>
